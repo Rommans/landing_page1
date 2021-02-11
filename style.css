@@ -1,6 +1,7 @@
 body{
     background-color: white;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .header {
@@ -24,8 +25,6 @@ body{
     font-size: 24px;
 }
 
-
-
 .navigation {
     list-style-type: none;
     display: flex;
@@ -44,6 +43,11 @@ body{
     text-decoration: none;
 }
 
+.item a:hover {
+    text-decoration: underline;
+    font-weight:bold;
+}
+
 .buttons {
     display: flex;
 }
@@ -56,21 +60,38 @@ body{
     font-weight: 400;
     line-height: 22.5px;
     font-size: 15px;
-    border: none;
     background-color: transparent;
     color: #040062;
+    border: none;
+    outline: none;
+    width: 50px;
+}
+
+.dropdown button:hover {
+    font-weight: bold;
 }
 
 .dropdown-content {
     background-color: #f9f9f9;
     width: 45px;
     display: none;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 10px 13px;
+    color: #040062;;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    padding: 6px 0;
+}
+
+.dropdown-content a:hover {
+    color :#0013FF;
+    background-color: rgb(218, 213, 201);    
+    text-decoration: underline;
 }
 
 .dropdown-content:hover {
@@ -94,16 +115,23 @@ body{
     background: #0013FF;
     border-radius: 9999px;
     color:white;
-    border: none;
     margin-left: 40px;
-}   
+    border: none;
+    outline: none;
+}
+
+.access button:active {
+    background: rgb(245, 157, 25);
+}
+
+.access button:hover {
+    background: rgb(245, 157, 25);
+}
 
 .fas {
     color: black;
     font-size: 12px;
 }
-
-
 
 .main {
     width: 90%;
@@ -217,7 +245,7 @@ body{
 }
 
 .first-text-top {
-    margin-top: 285px;
+    margin-top: 135px;
     margin-right: 171px;
     margin-left: 100px;
     font-family: 'DM Serif Display', serif;
@@ -481,6 +509,19 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
+.access-2 button:active{
+    background: rgb(245, 157, 25);
+}
+
+.access-2 button:focus{
+    border: none;
+    outline:none;
+}
+
+.access-2 button:hover{
+    background: rgb(245, 157, 25);
+}
+
 .sixth-block {
     height: 395px;
     background: #F5FBFF;
@@ -551,27 +592,33 @@ body{
     border-radius: 999px;
     height: 52px;
     background: #FFFFFF;
-    border: none;
     width: 341px;
     padding-right: 20px;
-}
-
-.search-Term:focus{
-    color: #FFFFFF;
+    border: none;
+    outline: none;
 }
 
 .search-button {
     font-weight: 600;
     line-height: 22.5px;
-    font-size: 16px;
+    font-size: 15px;
     height: 52px;
     width: 115px;
     background: #0013FF;
     border-radius: 9999px;
     color:white;
-    border: none;
     margin-left: 20px;
     font-family: 'Noto Sans', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.search-button:active {
+    background: rgb(245, 157, 25);
+}
+
+.search-button:hover {
+    background: rgb(245, 157, 25);
 }
 
 .information {
@@ -595,6 +642,10 @@ body{
     line-height: 19.5px;
     color: #6D758D;
     margin-top: 24px;
+}
+
+.more-info:hover {
+    color: #040062;
 }
 
 .footer {
@@ -630,6 +681,11 @@ body{
     color: #6D758D;
 }
 
+.data-bottom:hover {
+    text-decoration: underline;
+    color: #040062;
+}
+
 .list-name{
     font-family: 'Hammersmith One', sans-serif;
     font-weight: 400;
@@ -648,6 +704,12 @@ body{
 .logos a {
     color:black;
 }
+
+.logos a:hover {
+    color: #040062;
+    transform: scale(1.5);
+}
+
 .text-logos-bottom {
     display: flex;
     flex-direction: column;
