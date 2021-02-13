@@ -168,14 +168,14 @@ body{
     }
 }
 
-@media (min-width: 401px) and (max-width: 1000px) {
+@media (min-width: 401px) and (max-width: 9999px) {
     .mobile-header {
         display: none;
     }
 }
 
 
-@media (min-width: 401px) and (max-width: 1000px) {
+@media (min-width: 401px) and (max-width: 9999px) {
     .header {
         display: flex;
         height: 74px;
