@@ -19,9 +19,9 @@ body{
         font-size: 24px;
         color: #040062;
         font-family: 'Hammersmith One', sans-serif;
-        right: 50%;
+        right: 57%;
         top: 25%;
-        position:absolute;
+        position: absolute;
     }
 
     .burger {
@@ -82,7 +82,7 @@ body{
     }
 
     .mobile-dropdown {
-        right: 32%;
+        right: 35%;
         top: 25%;
         position: absolute;
     }
