@@ -9,16 +9,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Hammersmith+One&family=Noto+Sans&family=Oswald:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <span>Nabla</span>
+            </div>
+            <div class="mobile-menu">
+                <div id="my-links" class="mobile-navigation">
+                    <a class="mobile-item" href="">Home</a>
+                    <a class="mobile-item" href="">Vision</a>
+                    <a class="mobile-item" href="">Team</a>
+                    <a class="mobile-item" href="">Careers</a>
+                    <a class="mobile-item" href="">Blog</a>
+                </div>
+                <a href="javascript:void(0);" class="burger" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="mobile-buttons">
+                <div class="mobile-dropdown">
+                    <button>En <i class="fas fa-arrow-down"></i></button>
+                    <div class="mobile-dropdown-content">
+                        <a href="">Ua</a>
+                        <a href="">Ru</a>
+                    </div>
+                </div>
+                <div class="mobile-access">
+                    <button>Get early access</button>
+                </div>
+            </div>
+    </header>
+
     <header class="header">
         <div class="logo">
             <span>Nabla</span>
         </div>
         <div class="menu">
-            <ul class="navigation">
+            <ul id="my-links" class="navigation">
                 <li class="item"><a href="">Home</a></li>
                 <li class="item"><a href="">Vision</a></li>
                 <li class="item"><a href="">Team</a></li>
@@ -196,5 +228,15 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("my-links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>
