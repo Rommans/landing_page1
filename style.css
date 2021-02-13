@@ -143,7 +143,7 @@ body{
         line-height: 18.5px;
         font-size: 13px;
         height: 26px;
-        width: 128px;
+        width: 35%;
         background: #0013FF;
         border-radius: 9999px;
         color: white;
@@ -253,7 +253,7 @@ body{
         right: 0;
     }
     
-    
+/* */
     
     .mobile-first-block {
         height: 380px;
@@ -272,7 +272,7 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 315px;
+        height: 300px;
     }
     
     .mobile-first-background-phone-block {
@@ -288,7 +288,7 @@ body{
         bottom: 0;
         left: 100%;
         transform: translate(-68%, 0);
-        width: 72%;
+        width: 63%;
     }
     
     .mobile-first-block-text {
@@ -298,7 +298,7 @@ body{
     .mobile-first-text-top {
         margin-top: 7px;
         margin-right: 140px;
-        margin-left: 50px;
+        margin-left: 40px;
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
         font-size: 34px;
@@ -308,7 +308,7 @@ body{
     
     .mobile-first-text-bottom {
         margin-top: -25px;
-        margin-left: 50px;
+        margin-left: 40px;  
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
         font-size: 13px;
@@ -318,7 +318,7 @@ body{
     
     .mobile-second-block {
         display: flex;
-        height: 648px;
+        height: 380px;
     }
     
     .mobile-second-block-text {
@@ -328,23 +328,23 @@ body{
     .mobile-second-text-top {
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 34px;
+        line-height: 35px;
         color: #040062;
-        margin-left: 132px;
-        margin-top: 205px;
-        margin-right: 293px;
+        margin-left: 16px;
+        margin-top: 7px;
+        margin-right: 140px;
     }
     
     .mobile-second-text-bottom {
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 13px;
+        line-height: 19px;
         color: #6D758D;
-        margin-left: 132px;
-        margin-top: 32px;
-        margin-right: 85px;
+        margin-left: 16px;
+        margin-top: -13px;
+        margin-right: 36px;
     }
     
     .mobile-second-phone-block {
@@ -355,16 +355,17 @@ body{
     
     .mobile-second-background-phone-block {
         position: absolute;
-        bottom: 30%;
-        left: -13%;
-        width: 46%; 
+        bottom: 21%;
+        left: -22px;
+        width: 140px;
     }
     
     .mobile-second-img-phone-block {
         position: absolute;
         bottom: -3%;
-        left: -24%;
-        width: 57%;
+        left: -55px;
+        width: 143px;
+        z-index: 999;
     }
     
     .mobile-second-img-phone {
@@ -372,17 +373,19 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        height: 300px;
     }
     
     .mobile-third-block {
         display: flex;
-        height: 648px;
+        height: 380px;
     }
     
     .mobile-third-phone-block {
         position: relative;
         background: #FEF1EF;
         width: 50%;
+        z-index: -999;
     }
     
     .mobile-third-background-phone-block {
@@ -390,7 +393,7 @@ body{
         bottom: 0;
         left: 100%;
         transform: translate(-80%, 0);
-        width: 64%;
+        width: 72%;
     }
     
     .mobile-third-img-phone {
@@ -398,6 +401,7 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        height: 300px;
     }
     
     .mobile-third-img-phone-block {
@@ -405,7 +409,7 @@ body{
         bottom: 0;
         left: 100%;
         transform: translate(-50%, 0);
-        width: 36%;
+        width: 52%;
     }
     
     .mobile-third-block-text {
@@ -413,30 +417,29 @@ body{
     }
     
     .mobile-third-text-top {
-        margin-top: 178px;
-        margin-right: 171px;
-        margin-left: 100px;
+        margin-top: 7px;
+        margin-right: 27px;
+        margin-left: 37px;
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 34px;
+        line-height: 35px;
         color: #040062;
+        margin-bottom: 13px;
     }
     
     .mobile-third-text-bottom {
-        margin-top: 32px;
-        margin-right: 132px;
-        margin-left: 100px;
+        margin-left: 37px;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 13px;
+        line-height: 19px;
         color: #6D758D;
     }
     
     .mobile-fourth-block {
         display: flex;
-        height: 648px;
+        height: 380px;
     }
     
     .mobile-fourth-block-text {
@@ -446,23 +449,23 @@ body{
     .mobile-fourth-text-top {
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 34px;
+        line-height: 35px;
         color: #040062;
-        margin-left: 132px;
-        margin-top: 235px;
-        margin-right: 132px;
+        margin-left: 16px;
+        margin-top: 7px;
+        margin-right: 27px;
     }
     
     .mobile-fourth-text-bottom {
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 13px;
+        line-height: 19px;
         color: #6D758D;
-        margin-left: 132px;
-        margin-top: 32px;
-        margin-right: 85px;
+        margin-left: 16px;
+        margin-top: -13px;
+        margin-right: 24px;
     }
     
     .mobile-fourth-phone-block {
@@ -474,15 +477,16 @@ body{
     .mobile-fourth-background-phone-block {
         position: absolute;
         bottom: 0;
-        left: -12%;
-        width: 49%;
+        left: -30%;
+        width: 70%;
     }
     
     .mobile-fourth-img-phone-block {
         position: absolute;
         bottom: 0;
-        left: -16%;
-        width: 36%;
+        left: -32%;
+        width: 52%;
+        z-index: 999;;
     }
     
     .mobile-fourth-img-phone {
@@ -490,11 +494,12 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        height: 300px;
     }
     
     .mobile-fifth-block {
         display: flex;
-        height: 648px;
+        height: 380px;
     }
     
     .mobile-fifth-phone-block {
@@ -506,9 +511,8 @@ body{
     .mobile-fifth-background-phone-block {
         position: absolute;
         bottom: 0;
-        left: 100%;
-        transform: translate(-83%, 0);
-        width: 54%;
+        left: 40%;  
+        width: 80%;
     }
     
     .mobile-fifth-img-phone {
@@ -516,14 +520,14 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        height: 300px;
     }
     
     .mobile-fifth-img-phone-block {
         position: absolute;
         bottom: 0;
-        left: 100%;
-        transform: translate(-107%, 0);
-        width: 32%;
+        left: 55%;
+        width: 52%;
     }
     
     .mobile-fifth-block-text {
@@ -531,39 +535,38 @@ body{
     }
     
     .mobile-fifth-text-top {
-        margin-top: 143px;
-        margin-right: 180px;
-        margin-left: 100px;
+        margin-top: 7px;
+        margin-left: 37px;
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 34px;
+        line-height: 35px;
         color: #040062;
     }
     
     .mobile-fifth-text-bottom {
-        margin-top: 32px;
-        margin-right: 133px;
-        margin-left: 100px;
+        margin-top: -13px;
+        margin-left: 37px;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 13px;
+        line-height: 19px;
         color: #6D758D;
+        margin-right: -2px;
+        margin-bottom: 8px;
     }
     
     .mobile-access-2 button{
         font-weight: 600;
-        line-height: 22.5px;
-        font-size: 16px;
-        height: 42px;
-        width: 157px;
+        line-height: 18.5px;
+        font-size: 13px;
+        height: 26px;
+        width: 128px;
         background: #0013FF;
         border-radius: 9999px;
-        color:white;
+        color: white;
         border: none;
-        margin-left: 100px;
-        margin-top: 40px;
+        margin-left: 39px;
         font-family: 'Noto Sans', sans-serif;
     }
     
