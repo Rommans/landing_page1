@@ -5,7 +5,7 @@ body{
 }
 
 /* ///////////////////////////////////////// */
-@media (min-width:1px) and (max-width: 400px) {
+@media (min-width:1px) and (max-width: 425px) {
     .body {
         overflow-x: hidden;
     }
@@ -710,7 +710,7 @@ body{
 
 /* /////////////////////////////////////// */
 
-@media (min-width: 1px) and (max-width: 400px){
+@media (min-width: 1px) and (max-width: 426px){
     .header {
         display: none;
     }
@@ -720,7 +720,7 @@ body{
 
 }
 
-@media (min-width: 401px) and (max-width: 9999px) {
+@media (min-width: 426px) and (max-width: 9999px) {
     .mobile-header {
         display: none;
     }
@@ -731,7 +731,7 @@ body{
 }
 
 
-@media (min-width: 401px) and (max-width: 9999px) {
+@media (min-width: 426px) and (max-width: 9999px) {
     .header {
         display: flex;
         height: 74px;
