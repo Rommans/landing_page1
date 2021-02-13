@@ -713,11 +713,18 @@ body{
     .header {
         display: none;
     }
+    .main {
+        display: none;
+    }
 
 }
 
 @media (min-width: 401px) and (max-width: 9999px) {
     .mobile-header {
+        display: none;
+    }
+
+    .mobile-main {
         display: none;
     }
 }
