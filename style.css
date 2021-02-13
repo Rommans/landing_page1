@@ -30,7 +30,7 @@ body{
 
     .mobile-menu {
         background-color: rgb(160, 147, 147); 
-        left: 7%;
+        left: 6%;
         top: 25%;
         position: absolute;
     }
@@ -53,6 +53,7 @@ body{
     .mobile-navigation a {
         padding: 6px 0;
         font-weight: bold;
+        display: block;
     }
 
     .mobile-menu a {
@@ -83,7 +84,7 @@ body{
 
     .mobile-dropdown {
         right: 35%;
-        top: 25%;
+        top: 32%;
         position: absolute;
     }
 
@@ -112,7 +113,7 @@ body{
     }
 
     .mobile-dropdown-content a {
-        color: #040062;;
+        color: #040062;
         display: flex;
         flex-direction: column;
         text-decoration: none;
@@ -129,7 +130,7 @@ body{
         background-color: #f1f1f1
     }
 
-    .mobile-dropdown:hover .dropdown-content {
+    .mobile-dropdown:hover .mobile-dropdown-content {
         display: block;
     }
 
@@ -169,7 +170,7 @@ body{
 
     .mobile-banner {
         background-color: #C7E3E9;
-        height: 240px;
+        height: 235px;
         padding-top: 50px;
         padding-bottom: 200px;
         position: relative;
