@@ -83,6 +83,7 @@ body{
         right: 37%;
         top: 32%;
         position: absolute;
+        width: 60px;
     }
 
     .mobile-dropdown button {
@@ -93,7 +94,6 @@ body{
         color: #040062;
         border: none;
         outline: none;
-        width: 60px;
     }
 
     .mobile-dropdown button:hover {
@@ -295,7 +295,7 @@ body{
     .mobile-first-text-top {
         margin-top: 7px;
         margin-right: 140px;
-        margin-left: 40px;
+        margin-left: 35px;
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
         font-size: 34px;
@@ -305,7 +305,7 @@ body{
     
     .mobile-first-text-bottom {
         margin-top: -25px;
-        margin-left: 40px;  
+        margin-left: 35px;  
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
         font-size: 13px;
@@ -427,7 +427,7 @@ body{
     .mobile-third-text-top {
         margin-top: 7px;
         margin-right: 27px;
-        margin-left: 37px;
+        margin-left: 35px;
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
         font-size: 34px;
@@ -437,7 +437,7 @@ body{
     }
     
     .mobile-third-text-bottom {
-        margin-left: 37px;
+        margin-left: 35px;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
         font-size: 13px;
@@ -544,7 +544,7 @@ body{
     
     .mobile-fifth-text-top {
         margin-top: 7px;
-        margin-left: 37px;
+        margin-left: 35px;
         font-family: 'DM Serif Display', serif;
         font-weight: 900;
         font-size: 34px;
@@ -554,7 +554,7 @@ body{
     
     .mobile-fifth-text-bottom {
         margin-top: -13px;
-        margin-left: 37px;
+        margin-left: 35px;
         font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
         font-size: 13px;
