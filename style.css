@@ -725,9 +725,9 @@ body{
     .mobile-footer {
         display: flex;
         width: 80%;
-        height: 290px;
+        height: 260px;
         justify-content: space-between;
-        margin: 110px auto;
+        margin: 100px auto;
         border-top: 1px solid #DCE0E9;
         padding-top: 50px;
         position: relative;
@@ -781,6 +781,7 @@ body{
         margin-top: 10%;
         margin-left: 75%;
         flex-direction: column;
+        text-align: right;
     }
     
     .mobile-logos a {
