@@ -294,36 +294,58 @@
         <div class="mobile-name">
             <span>Nabla</span>
         </div>
-        <div class="mobile-main-text">
-            <ul class="mobile-list">
-                <p class="mobile-list-name">Company</p>
-                <li>
-                    <a class="mobile-data-bottom" href="">Team</a>
-                </li>
-                <li>
-                    <a class="mobile-data-bottom" href="">Careers</a>
-                </li>
-            </ul>
+        <div class="mobile-data">
+            <button class="mobile_accordion">Company</button>
+            <div class="mobile_panel">
+                <div class="mobile-panel-company">
+                    <a href="">Team</a>
+                    <a href="">Careers</a>
+                </div>
+            </div>
+
+            <button class="mobile_accordion">Address</button>
+            <div class="mobile_panel">
+                <div class="mobile-panel-address">
+                    <a href="">22 rue Chapon</a>
+                    <a href="">75003 Paris</a>
+                </div>
+            </div>
+
+            <button class="mobile_accordion">Contact</button>
+            <div class="mobile_panel">
+                <div class="mobile-panel-contacts">
+                    <a href="">Get in touch</a>
+                </div>
+            </div>
         </div>
-        <div class="mobile-main-text">  
-            <ul class="mobile-list">
-                <p class="mobile-list-name">Address</p>
-                <li>
-                    <a class="mobile-data-bottom" href="">22 rue Chapon</a>
-                </li>
-                <li>
-                    <a class="mobile-data-bottom" href="">75003 Paris</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mobile-main-text">
-            <ul class="mobile-list">
-                <p class="mobile-list-name">Contact</p>
-                <li>
-                    <a class="mobile-data-bottom" href="">Get in touch</a>
-                </li>
-            </ul>
-        </div>
+        <!--<div class="mobile-buttons-bottom">
+            <div class="mobile-main-text mobile-list-company">
+                <div class="mobile-list-dropdown">
+                    <button class="mobile-list-name">Company</button>
+                    <div class="mobile-list-name-dropdown mobile-list-name-dropdown-company">
+                        <a class="mobile-data-bottom" href="">Team</a>
+                        <a class="mobile-data-bottom" href="">Careers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-main-text mobile-list-address">  
+                <div class="mobile-list-dropdown">
+                    <button class="mobile-list-name">Address</button>
+                    <div class="mobile-list-name-dropdown mobile-list-name-dropdown-address">
+                        <a class="mobile-data-bottom" href="">22 rue Chapon</a>
+                        <a class="mobile-data-bottom" href="">75003 Paris</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-main-text mobile-list-contacts">  
+                <div class="mobile-list-dropdown">
+                    <button class="mobile-list-name">Contact</button>
+                    <div class="mobile-list-name-dropdown mobile-list-name-dropdown-contacts">
+                        <a class="mobile-data-bottom" href="">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
         <div class="mobile-social-media">
             <div class="mobile-logos">
                 <a href=""><i class="fab fa-instagram"></i></a>
@@ -398,6 +420,21 @@
             x.style.display = "block";
           }
         }
-        </script>
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("mobile_accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            var mobile_panel = this.nextElementSibling;
+            if (mobile_panel.style.display === "block") {
+              mobile_panel.style.display = "none";
+            } else {
+              mobile_panel.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>
 </html>
