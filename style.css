@@ -90,10 +90,10 @@ body{
     }
 
     .mobile-dropdown {
-        right: 37%;
+        right: 35%;
         top: 32%;
         position: absolute;
-        width: 60px;
+        width: 70px;
     }
 
     .mobile-dropdown button {
@@ -902,6 +902,7 @@ body{
         text-align: left;
         font-weight: 600;
         width: 100%;
+        transition: 0.5s;
     }
     
     .mobile_panel {
