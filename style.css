@@ -2515,6 +2515,7 @@ body{
     
     .tablet-logos a {
         color:black;
+        margin-right: 4px;
     }
     
     .tablet-logos a:hover {
