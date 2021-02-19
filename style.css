@@ -3278,6 +3278,7 @@ body{
         margin: 90px auto;
         border-top: 1px solid #DCE0E9;
         padding-top: 60px;
+        position: relative;
     }
     
     .tablet-name span {
@@ -3324,8 +3325,10 @@ body{
         display: flex;
         justify-content: space-around;
         width: 40%;
-        margin-left: 60%;
+        margin: end;
         margin: 0 auto;
+        position: relative;
+        top: 4px;
     }
     
     .tablet-logos a {
@@ -3342,6 +3345,10 @@ body{
         display: flex;
         flex-direction: column;
         text-align: center;
+        top: 94%;
+        width: 100%;
+        right: 0%;
+        position: absolute;
     }
     
     .tablet-social-media {
