@@ -474,35 +474,29 @@
         <div class="tablet-name">
             <span>Nabla</span>
         </div>
-        <div class="tablet-main-text">
-            <ul class="tablet-list">
-                <p class="tablet-list-name">Company</p>
-                <li class="tablet-li-data-top">
-                    <a class="tablet-data-bottom" href="">Team</a>
-                </li>
-                <li>
-                    <a class="tablet-data-bottom" href="">Careers</a>
-                </li>
-            </ul>
-        </div>
-        <div class="tablet-main-text">  
-            <ul class="tablet-list">
-                <p class="tablet-list-name">Address</p>
-                <li class="tablet-li-data-top">
-                    <a class="tablet-data-bottom" href="">22 rue Chapon</a>
-                </li>
-                <li>
-                    <a class="tablet-data-bottom" href="">75003 Paris</a>
-                </li>
-            </ul>
-        </div>
-        <div class="tablet-main-text">
-            <ul class="tablet-list">
-                <p class="tablet-list-name">Contact</p>
-                <li class="tablet-li-data-top">
-                    <a class="tablet-data-bottom" href="">Get in touch</a>
-                </li>
-            </ul>
+        <div class="tablet-data">
+            <button class="tablet_accordion">Company</button>
+            <div class="tablet_panel">
+                <div class="tablet-panel-company">
+                    <a href="">Team</a>
+                    <a href="">Careers</a>
+                </div>
+            </div>
+
+            <button class="tablet_accordion">Address</button>
+            <div class="tablet_panel">
+                <div class="tablet-panel-address">
+                    <a href="">22 rue Chapon</a>
+                    <a href="">75003 Paris</a>
+                </div>
+            </div>
+
+            <button class="tablet_accordion">Contact</button>
+            <div class="tablet_panel">
+                <div class="tablet-panel-contacts">
+                    <a href="">Get in touch</a>
+                </div>
+            </div>
         </div>
         <div class="tablet-social-media">
             <div class="tablet-logos">
@@ -511,10 +505,59 @@
                 <a href=""><i class="fab fa-twitter"></i></a>
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="tablet-text-logos-bottom">
-                <span class="tablet-logos-bottom">Nabla Technologies - 2020</span>
-                <span class="tablet-logos-bottom">All Rights reserved</span>
-                <span class="tablet-logos-bottom tablet-logos-bottom-2">Legal notice - T&C</span>
+        </div>
+        <div class="tablet-text-logos-bottom">
+            <span class="tablet-logos-bottom">Nabla Technologies - 2020</span>
+            <span class="tablet-logos-bottom">All Rights reserved</span>
+            <span class="tablet-logos-bottom tablet-logos-bottom-2">Legal notice - T&C</span>
+        </div>
+    </footer>
+
+    <footer class="tablet-footer-2">
+        <div class="tablet-name-2">
+            <span>Nabla</span>
+        </div>
+        <div class="tablet-main-text-2">
+            <ul class="tablet-list-2">
+                <p class="tablet-list-name-2">Company</p>
+                <li>
+                    <a class="tablet-data-bottom-2" href="">Team</a>
+                </li>
+                <li>
+                    <a class="tablet-data-bottom-2" href="">Careers</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tablet-main-text-2">  
+            <ul class="tablet-list-2">
+                <p class="tablet-list-name-2">Address</p>
+                <li>
+                    <a class="tablet-data-bottom-2" href="">22 rue Chapon</a>
+                </li>
+                <li>
+                    <a class="tablet-data-bottom-2" href="">75003 Paris</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tablet-main-text-2">
+            <ul class="tablet-list-2">
+                <p class="tablet-list-name-2">Contact</p>
+                <li>
+                    <a class="tablet-data-bottom-2" href="">Get in touch</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tablet-social-media-2">
+            <div class="tablet-logos-2">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="tablet-text-logos-bottom-2">
+                <span class="tablet-logos-bottom-2">Nabla Technologies - 2020</span>
+                <span class="tablet-logos-bottom-2">All Rights reserved</span>
+                <span class="tablet-logos-bottom-2 tablet-logos-bottom-2-2">Legal notice - T&C</span>
             </div>
         </div>
     </footer>
@@ -581,6 +624,21 @@
     </script>
     <script>
         var acc = document.getElementsByClassName("mobile_accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            var mobile_panel = this.nextElementSibling;
+            if (mobile_panel.style.display === "block") {
+              mobile_panel.style.display = "none";
+            } else {
+              mobile_panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("tablet_accordion");
         var i;
         
         for (i = 0; i < acc.length; i++) {
