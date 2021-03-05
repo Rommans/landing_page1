@@ -804,6 +804,10 @@ body{
         position:relative;
     }
 
+    .tablet-footer-2 {
+        display: none;
+    }
+
     .mobile-logo {
         font-size: 24px;
         color: #040062;
